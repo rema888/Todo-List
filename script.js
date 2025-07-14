@@ -258,7 +258,7 @@ const renderTasks = () => {
     tasksContainer.innerHTML = `<p class="no-tasks">Нет задач в этой категории</p>`;
     numTasks.textContent = "Осталось задач: 0";
     updateTotals();
-    renderCategories();
+    renderCategories(); // Добавляем обновление категорий
   } else {
     categoryTasks.forEach((task) => {
       const div = document.createElement("div");
@@ -328,7 +328,7 @@ const renderTasks = () => {
     });
 
     renderCategories();
-    updateTotals();
+    updateTotals(); // Добавляем обновление счетчиков
   }
 };
 

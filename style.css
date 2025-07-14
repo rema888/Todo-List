@@ -138,7 +138,7 @@ body {
     justify-content: space-between;
     box-shadow: 0 10px 20px 5px #00000023;
     transition: all 0.3s;
-
+    border-left: 4px solid #39a6f0; /* Подсветка кнопки слева */
 }
 
 .category:hover {
@@ -164,27 +164,6 @@ body {
     color: #2e2e2e;
     font-size: 0.8rem;
     opacity: 0.6;
-}
-
-.category .options {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-}
-
-.category:hover .options {
-    opacity: 1;
-    visibility: visible;
-}
-
-.category .toggle-btn {
-    width: 2rem;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.category .toggle-btn:hover {
-    opacity: 1;
 }
 
 .category-screen .head-wrapper {
@@ -223,7 +202,7 @@ body {
     padding-bottom: 20px;
     overflow: auto;
 }
-
+ 
 .tasks {
     padding-top: 1rem;
     display: flex;
@@ -235,9 +214,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgba(255,255,255,0.9);  /* Полупрозрачный белый фон */
+    border-radius: 8px;                /* Закруглённые углы */
+    padding: 12px;                     /* Внутренние отступы */
+    margin-bottom: 8px;                /* Внешний отступ снизу */
 }
-
-
 
 .task {
     display: flex;
